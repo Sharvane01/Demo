@@ -1,0 +1,365 @@
+<html>
+    <head>
+        <title>Page5</title>
+    </head>
+    <body>
+        <div class="main">
+            <div class="nav">
+                <div class="sidebar"></div>
+                <div class="logo"></div>
+                <div class="steps">
+                    <div class="tag1">
+                        <label>1. Trade License</label>
+                    </div>
+                    <div class="tag2">
+                        <label>2. Emirates ID(s)</label>
+                    </div>
+                    <div class="tag3">
+                        <label>3. Passport/Visa(s)</label>
+                    </div>
+                    <div class="tag4">
+                        <label>4. Additional Doc(s)</label>
+                    </div>
+                    <div class="tag5">
+                        <label>5. Review & Submit</label>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="form">
+                    <h3>Upload Passport / Visa of Owner(s)</h3>
+                    <div class="upload">
+                        <input type="text" class="txtbox1" disabled="true">
+                        <input type="file" accept="application/pdf,image/jpeg,image/png" class="file-input"><label class="file-detail1">(PDF/JPG/PNG)</label><br>
+                        <label class="file-detail">(Passport First and Last Page / Visa Page)</label>
+                    </div>
+                    <div class="details">
+                        <table>
+                            <tr>
+                                <td style="text-align:right;"><label>PASSPORT NUMBER</label></td>
+                                <td>
+                                    <input type="text" class="txtbox">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right;"><label>SURNAME / NAME</label></td>
+                                <td>
+                                    <input type="text" class="txtbox">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right;"><label>NATIONALITY</label></td>
+                                <td>
+                                    <input type="text" class="txtbox">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right;"><label>DATE OF BIRTH</label></td>
+                                <td>
+                                    <input type="text" class="txtbox">
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="second-table">
+                            <table>
+                                <tr>
+                                        <td><label>DATE OF ISSUE</label></td>
+                                        <td>
+                                            <input type="text" class="txtbox2">
+                                        </td> 
+                                        <td><label>DATE OF EXPIRY</label></td>
+                                        <td>
+                                            <input type="text" class="txtbox2">
+                                        </td>
+                                </tr>
+                                <tr>
+                                    <td><label>GENDER</label></td>
+                                        <td>
+                                            <input type="text" class="txtbox2">
+                                        </td>
+                                        <td>
+                                        </td>
+                                        <td>
+                                            <button class="btn">Add ID</button>
+                                        </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-btn">
+                    <a class="backbtn" href="Page4.html">Go back</a>
+                    <button class="btn1"onclick="nxtPage()">Next Step</button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        function nxtPage() {
+            window.location.href="Page6.html";
+        }
+    </script>
+    <style>
+        body{
+            background: #F8F8F8 ;
+           font-family: 'Poppins', sans-serif;
+       }
+       .main{
+           display: flex;
+           width: 90%;
+        }
+        .nav{ 
+           width:35%; 
+           display: flex;  
+           margin-right: 15px;
+
+       }
+       .content{
+           display: block; 
+           width: 80%;
+           margin-left: 3%;
+           zoom:80%;
+
+       }
+        .sidebar{
+            height:100vh;
+            background-color: #000370;
+           animation: 1s ease-out 0s 1 slideInFromLeft; 
+            width:30%;
+        }
+
+        .logo{
+            height: 150px;
+            width: 150px;
+            border-radius: 100%;
+            margin:auto;
+            margin-top: 8%;
+            margin-left: 6%;  
+            padding: 15px;
+            background-color: #000370;
+            zoom: 90%;
+        }
+        .steps{
+            display: block;
+            position: absolute;
+            margin-top: 14%;
+            animation: 1s ease-out 0s 1 slideInFromLeft; 
+           margin-left: 1%;
+           zoom:80%
+        }
+        .tag1{
+            border-radius: 8px;
+            background-color: #FEFEFE;
+            color: #000370;
+            margin-top: 20px;
+            width: 200px;
+            margin-bottom: 30px;
+           box-shadow: rgba(0, 0, 0, 0.5) 0px 15px 10px -10px;
+            margin-left: 3rem;
+            font-size: large; 
+            padding: 15px;
+            animation: 1s ease-out 0s 1 slideInFromLeftTags;
+
+        }
+        .tag2{
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #FEFEFE;
+            color: #000370;
+            width: 200px;
+            margin-top: 20px;
+            font-size: large;            
+            margin-bottom: 30px;
+            margin-left: 3rem;
+           box-shadow: rgba(0, 0, 0, 0.5) 0px 15px 10px -10px; 
+            animation: 1s ease-out 0s 1 slideInFromLeftTags;
+
+               }
+               .tag3{
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #FEFEFE;
+            color: #000370;
+            border: solid 4px #000370;
+            font-weight: bolder;
+            width: 200px;
+            margin-top: 20px;
+            font-size: large;            
+            margin-bottom: 30px;
+           box-shadow: rgba(0, 0, 0, 0.5) 0px 15px 10px -10px;
+            margin-left: 5rem;
+            padding-right: 25px; 
+           animation: 1s ease-out 0s 1 slideInFromLeftTags;
+               }
+               .tag4{
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #FEFEFE;
+            color: #000370;
+            width: 200px;
+            margin-top: 20px;
+            font-size: large;            
+            margin-bottom: 30px;
+           box-shadow: rgba(0, 0, 0, 0.5) 0px 15px 10px -10px;
+            margin-left: 3rem;
+            padding-right: 25px; 
+           animation: 1s ease-out 0s 1 slideInFromLeftTags;
+               }
+               .tag5{
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #FEFEFE;
+            color: #000370;
+            width: 200px;
+            margin-top: 20px;
+            font-size: large;            
+            margin-bottom: 30px;
+           box-shadow: rgba(0, 0, 0, 0.5) 0px 15px 10px -10px;
+            margin-left: 3rem;
+            padding-right: 25px; 
+           animation: 1s ease-out 0s 1 slideInFromLeftTags;
+               }
+       h3{
+        margin-left: 3rem;
+            color: #000370;
+            font-size:xx-large;
+       }
+              .upload{
+           padding: 10px;
+           margin-top: 2%; 
+           margin-left: 15rem;
+
+       }
+        
+       .file-input{
+           padding-left: 10px;
+           width: 100px; 
+       }
+       .file-detail{
+           font-size: small;
+           position: relative;
+           margin-left: 3rem;
+       }
+       .file-detail1{
+           font-size: small;
+           position: relative;
+           margin-left: 1rem;
+       }
+       table{
+           margin-left: 5%;
+       }
+        
+       .form{
+                display: block;
+               background-color: #FEFEFE;
+               padding: 10px;
+               box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+               border-radius: 8px; 
+               margin-right: 4%;
+               width: 98%;
+               height: 72%;
+               margin: auto;
+               margin-top: 5%;
+               font-size: medium; 
+               overflow-y: auto;
+              }
+        .details{
+            display: block;
+            margin: auto;
+            float: left;
+            margin-left: 10%;
+            padding: 10px;
+        }
+
+        .second-table{
+            margin-left: 2.5rem;
+        }
+       .footer-btn{
+           margin-top: 2%;
+           text-align: right;
+           margin-right: 5%;
+       }
+       td{
+           padding-right: 20px;
+           padding-bottom: 25px;
+       } 
+        
+       .table2{
+           float:right;
+       }
+       .txtbox2{
+           height: 35px;
+           padding: 5px;
+           width: 130px;
+       }
+       .txtbox{
+           height: 35px;
+           padding: 5px;
+           width: 450px;
+       }
+       .txtbox1{
+           height: 35px;
+           width: 380px;
+           padding: 5px;
+           margin-left:5%;
+           margin-right: 1%;
+       }
+       .btn{
+           padding:10px;
+           border-radius: 6px;
+           height: 40px;
+           width: 180px;
+           font-size: 18px;
+           background-color: #000370;
+           color: #FCFCF0;
+           border: none;
+           float: right; 
+           margin-left: 3%;
+       }
+       .btn1{
+           padding:10px;
+           border-radius: 20px;
+           height: 40px;
+           width: 180px;
+           font-size: 18px;
+           background-color: #000370;
+           color: #FCFCF0;
+           border: none;
+           float: right; 
+           margin-left: 3%;
+       }
+       .btn1:hover{
+            background-color: #E6E6F1;
+            color:#000370 ;
+            border-bottom: solid 4px #000370; 
+        }
+       .backbtn{
+           color: #000;
+           padding: 15px;
+           padding-top: 10px;
+           text-decoration: none;
+               }
+       .backbtn:visited{
+           text-decoration: none;  
+           color: #000;
+       }
+       @keyframes slideInFromLeft {
+            0% {
+                    transform: translateX(-100%);
+                 }
+            100% {
+                transform: translateX(0);
+            }
+        }
+       @keyframes slideInFromLeftTags {
+            0% {
+                    opacity: 60%;
+                    transform: translateX(-90%);
+                 }
+            100% {
+                opacity: 100%;
+                transform: translateX(0);
+            }
+} 
+   </style>
+</html>
